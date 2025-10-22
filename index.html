@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Francis Bacon</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Desarrollado por el grupo 2</h1>
+    <button id="creditsBtn" aria-controls="creditsSection" aria-expanded="false">Créditos</button>
+  </header>
+
+  <main id="mainContent">
+    <div class="hero">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Sir_Francis_Bacon.jpg"
+           alt="Retrato de Francis Bacon"
+           class="hero-image" />
+      <div class="hero-info">
+        <h2>Francis Bacon 📚</h2>
+        <p>Filósofo y estadista inglés (1561–1626), padre del método científico moderno y defensor de la investigación empírica sistemática. 🔬</p>
+      </div>
+    </div>
+
+    <div class="accordion" id="accordion">
+      <article class="accordion-item">
+        <button class="accordion-header">Infancia y Juventud <span class="icon">+</span></button>
+        <div class="accordion-content">
+          <p>Francis Bacon nació el 22 de enero de 1561 en Londres, en una familia acomodada; su padre fue Sir Nicholas Bacon. Estudió en Cambridge (Trinity College) desde una edad temprana y luego en Gray's Inn, donde recibió formación jurídica. Desde joven mostró interés por la filosofía natural y el aprendizaje práctico. 👶🎓</p>
+          <button class="close-btn">Cerrar</button>
+        </div>
+      </article>
+
+      <article class="accordion-item">
+        <button class="accordion-header">Educación y Formación <span class="icon">+</span></button>
+        <div class="accordion-content">
+          <p>Bacon recibió educación clásica y jurídica; sus viajes por Europa y su contacto con intelectuales de la época ampliaron su visión. Abogó por reformar el conocimiento mediante la observación y la experimentación, alejándose de la dependencia exclusiva de la autoridad y la deducción escolástica. 🎓</p>
+          <button class="close-btn">Cerrar</button>
+        </div>
+      </article>
+
+      <article class="accordion-item">
+        <button class="accordion-header">Carrera y Servicio Público <span class="icon">+</span></button>
+        <div class="accordion-content">
+          <p>Bacon desarrolló una prominente carrera política: fue miembro del Parlamento, abogado y finalmente Lord Canciller de Inglaterra. Paralelamente, escribió sobre la reorganización del saber humano y propuso un método inductivo para la ciencia. 💼</p>
+          <button class="close-btn">Cerrar</button>
+        </div>
+      </article>
+
+      <article class="accordion-item">
+        <button class="accordion-header">Obras Principales <span class="icon">+</span></button>
+        <div class="accordion-content">
+          <ul>
+            <li>Novum Organum (1620) — sobre el método científico</li>
+            <li>Of Advancement of Learning (1605)</li>
+            <li>Essays (varias ediciones) — ensayos sobre política y conducta</li>
+            <li>The New Atlantis (obra utópica incompleta)</li>
+          </ul>
+          <button class="close-btn">Cerrar</button>
+        </div>
+      </article>
+
+      <article class="accordion-item">
+        <button class="accordion-header">Contribuciones Filosóficas <span class="icon">+</span></button>
+        <div class="accordion-content">
+          <p>Bacon promovió un método inductivo basado en la recolección sistemática de datos y la experimentación controlada; criticó los "ídolos" (prejuicios) que distorsionan el entendimiento humano. Sus ideas sentaron bases para la ciencia experimental moderna y la investigación empírica. 🔍</p>
+          <button class="close-btn">Cerrar</button>
+        </div>
+      </article>
+
+      <article class="accordion-item">
+        <button class="accordion-header">Vida Personal y Muerte <span class="icon">+</span></button>
+        <div class="accordion-content">
+          <p>Bacon murió el 9 de abril de 1626. Además de su labor política y filosófica, es recordado por su defensa de la ciencia práctica y su influencia en el desarrollo del método científico. 👤</p>
+          <button class="close-btn">Cerrar</button>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <section id="creditsSection" class="hidden" aria-hidden="true">
+    <div class="credits-content">
+      <img src="" alt="" id="creditsImage" style="display:none" />
+      <div id="creditsList" class="credits-list">
+        <!-- La lista de créditos se renderiza dinámicamente -->
+      </div>
+    </div>
+    <button id="backBtn">Volver</button>
+  </section>
+
+  <button id="backToTop" aria-label="Volver arriba">↑ Volver arriba</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
